@@ -12,8 +12,16 @@ Resource: https://www.raspberrypi.org/documentation/configuration/wireless/wirel
 >}
 
 ### commands
-scan wireless networks: `$ sudo iwlist wlan0 scan` \
-get current SSID: `$ iwgetid`
+scan wireless networks: \
+`$ sudo iwlist wlan0 scan` \
+`$ wpa_cli -i wlan0 scan`\
+`$ wpa_cli -i wlan0 scan_results`\
+status: `$ wpa_cli -i wlan0 status`\
+get current SSID: `$ iwgetid`\
+
+### WPS 
+wps scan: `$ wpa_cli -i wlan0 wps_pbc` \
+wps cancel scan: `$ wpa_cli -i wlan0 wps_cancel`
 
 ### set up static ip
 get port name of ethernet port: `$ ifconfig`\
