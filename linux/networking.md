@@ -17,7 +17,7 @@ scan wireless networks: \
 `$ wpa_cli -i wlan0 scan`\
 `$ wpa_cli -i wlan0 scan_results`\
 status: `$ wpa_cli -i wlan0 status`\
-get current SSID: `$ iwgetid`\
+get current SSID: `$ iwgetid`
 
 ### WPS 
 wps scan: `$ wpa_cli -i wlan0 wps_pbc` \
