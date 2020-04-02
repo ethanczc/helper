@@ -33,7 +33,8 @@ WantedBy=multi-user.target
 `$ journalctl -u myscript.service`
 
 ### updating a service file
-`$ systemctl daemon-reload systemctl restart myscript.service`
+`$ systemctl daemon-reload` \
+`$ restart myscript.service`
 
 ### services running in background
 `$ service --status-all`\
