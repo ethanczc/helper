@@ -33,3 +33,10 @@ get port name of ethernet port: `$ ifconfig`\
 
 `$ sudo ifup "portname"`\
 check if ip is updated: `$ hostname -I`
+
+### Problems encountered
+#### wifi connected, but no internet
+This happens after setting up the wifi on wpa_supplicant.conf through ssh over ethernet.\
+However, if you are using linux to ssh into the pi, and has internet access after enabling internet sharing over ethernet. \
+Solution is found here : https://raspberrypi.stackexchange.com/questions/92932/wlan-connected-but-no-internet \
+to test connection from wlan0: `$ ping -I wlan0 8.8.8.8`
