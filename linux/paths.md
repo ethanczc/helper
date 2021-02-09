@@ -12,5 +12,5 @@ network config: /etc/wpa_supplicant/wpa_supplicant.conf
 
 ### logs
 /var/mail \
-/var/log/messages \
-/var/log/syslong
+nano /var/log/messages \
+nano /var/log/syslog
