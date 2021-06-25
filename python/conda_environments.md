@@ -21,3 +21,6 @@ packages file: packages.txt
 ## remove an environment
 - `conda remove --name mynewenv --all`
 - `conda env remove --name mynewenv`
+
+## deactivate environment
+- `conda deactivate`
