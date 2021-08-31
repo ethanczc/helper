@@ -1,5 +1,8 @@
 # working with environments on conda
 
+## update conda
+- `conda update -n base conda`
+
 environment name: mynewenv \
 packages file: packages.txt
 
@@ -7,6 +10,9 @@ packages file: packages.txt
 
 - `conda create -n mynewenv`
 - `conda create -n mynewenv python=3.6`
+
+### with yml
+- `conda env create -f <env.yml>`
 
 ## activate environment
 - `conda activate mynewenv`
