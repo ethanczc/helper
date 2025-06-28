@@ -31,6 +31,8 @@ WantedBy=multi-user.target
 
 ### logs
 `$ journalctl -u myscript.service`
+Follow the prints, python errors
+`$ journalctl -u ais_receiver.service -f`\
 
 ### updating a service file
 `$ systemctl daemon-reload` \
