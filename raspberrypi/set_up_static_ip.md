@@ -11,3 +11,12 @@ source: https://pimylifeup.com/raspberry-pi-static-ip-address/
 - enter nameserver ip to DNS servers
 - select ok, and quit
 - `sudo systemctl restart NetworkManager`
+
+## Creating a connection from nmtui
+- from existing ssh connection or via monitor
+- `sudo nmtui`
+- edit a connection
+- enter profile name (make it same as ssid for easy reference)
+- enter device & mac address eg. wlan0 (2C:CF:67:D0:84:FD)
+- enter SSID & password
+- do the ipv4 manual configuration as above.
